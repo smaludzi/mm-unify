@@ -1,0 +1,17 @@
+slawek = slawek.
+X = X.
+y(slawek) = y(slawek).
+y(slawek, ania) = y(slawek, ania).
+slawek = ania.
+y(slawek) = y(ania).
+y(slawek(z(ania))) = y(slawek(z(ania))).
+y(slawek(z(X))) = y(slawek(z(Y))).
+
+parent(slawek) = parent(slawek).
+parent(X, Y) = parent(X, X).
+parent(X, Y) = parent(slawek, ania).
+parent(X, Y, Z) = parent(slawek, ania, kubus).
+parent(X, Y) = parent(slawek, ania(kubus)).
+parent(X, ania(Y)) = parent(slawek, ania(kubus)).
+parent(X, Y, Z) = parent(O, P).
+
