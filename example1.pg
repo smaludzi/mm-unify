@@ -1,0 +1,15 @@
+parent(slawek, maks).
+parent(slawek, kuba).
+parent(boguslaw, slawek).
+parent(boguslaw, beata).
+
+grandparent(X,Y) :- parent(X, Zeee), parent(Zeee, Y).
+
+?- grandparent(boguslaw, slawek).
+?- grandparent(boguslaw, ania).
+?- grandparent(boguslaw, X).
+
+parent(X, Y) = parent(slawek(X, Y), make(X)).
+
+@@@
+

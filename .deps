@@ -1,0 +1,8 @@
+hash.o: hash.c hash.h
+test_hash.o: test_hash.c hash.h
+mm-unify.o: mm-unify.c scanner.h parser.h list.h term.h
+unify.o: unify.c unify.h
+unify_term.o: unify_term.c list.h hash.h unify.h unify_term.h term.h
+term.o: term.c term.h list.h
+list.o: list.c list.h
+hash.o: hash.c hash.h
