@@ -23,11 +23,13 @@
 #include "hash.h"
 
 #define HASH_INIT_SIZE 5
+#define HASH_MAGIC     5381
+#define HASH_W_MARK    0.8
 
 unsigned long hash_str(const char * str)
 {
     int c;
-    unsigned long hash = 5381;
+    unsigned long hash = HASH_MAGIC;
     
     while ((c = *str++) != 0)
     {
@@ -38,7 +40,7 @@ unsigned long hash_str(const char * str)
 
 int hash_get_watermark(hash * h)
 {
-	return 1.0 * h->size * 0.8;
+	return 1.0 * h->size * HASH_W_MARK;
 }
 
 hash * hash_new()
