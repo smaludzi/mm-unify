@@ -1,7 +1,7 @@
 /*
  * test_hash.h
  *
- * Copyright (C) 2017 Slawomir Maludzinski
+ * Copyright (C) 2007 Slawomir Maludzinski
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
